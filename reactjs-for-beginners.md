@@ -1,6 +1,6 @@
 # React.js for beginner
 
-## What is React.js
+## ⚛️ What is React.js
 
 <img src="assets/react.png" align="right" style="width: 200px; margin-left: 20px;"/>
 
@@ -12,7 +12,7 @@ Although React is a library rather than a language, it is widely used in web dev
 
 __The main purpose of React is to be fast, scalable, and simple.__
 
-## Getting Started
+## 🚀 Getting Started
 
 ### The official documentation
 There is no better way to get started in React.js than the official documentation. [Here](https://reactjs.org/docs/hello-world.html) you will find a brief description of the main concepts as well as links to CodePen where you can change the code and see what it does in real time. The goal here is for you to start think in React.
@@ -29,7 +29,7 @@ Once you're done with the official documentation it's time to build a solid foun
 * Install and use React DevTools for debugging
 * Build and deploy a React Application with Codesandbox, GitHub, and Netlify
 
-## React Hooks
+## 🪝 React Hooks
 
 Hooks are a feature introduced in the React 16.8 version. It provides an alternative to writing class-based components, and offers an alternative approach to state management and lifecycle methods.
 
@@ -37,14 +37,13 @@ Since they were already introduced in the [The Beginner's Guide to React](#the-b
 
 1. Go trough the [official documentation](https://reactjs.org/docs/hooks-intro.html) for an overview of how the hook work (or experienced React users)
 2. Learn how they work in a more in-depth way with the [Build Advanced Components with React Hooks](https://egghead.io/courses/build-advanced-components-with-react-hooks-810906cc) course where you will learn how to:
-<img src="assets/hooks.png" align="right" style="width: 100px; margin-left: 20px; margin-top: 20px;"/>
     * Manage React component state with useState
     * Share values throughout an application with Context
     * Build a React compound component
     * Render multiple pages in a Wizard form
     * Handle complex state updates with useReducer
 
-## React Router
+## ↪️ React Router
 
 Even tough React is built for single-page applications we can still build apps with multiple routes using [React Router](https://reactrouter.com/). It that allows you to handle routes in a web app, using _dynamic routing_,  meaning routing that takes place as your app is rendering, not in a configuration or convention outside of a running app. That means almost everything is a component in React Router.
 
@@ -60,4 +59,6 @@ A great way to learn about React Router is using the [official tutorial](https:/
 * Creating your own behaviors through composition
 * Server Rendering
 
-## Build your first app
+## 🧑‍💻 Build your first app
+
+TO DO
