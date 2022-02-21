@@ -71,9 +71,9 @@ A great way to learn about React Router is using the [official tutorial](https:/
 
 <img src="assets/react2.png" align="right" style="width: 200px; margin-left: 20px;"/>
 
-That that you have learn the basics of React.js, it's time to create your first app. Here we are going to use the [API](https://www.themoviedb.org/documentation/api) for The Movie Data Base (TMDB) to get data and show it in our application but you can use any API you prefer. Here is a list of public API's: https://github.com/public-apis/public-apis
+Now that you have learned the basics of React.js, it's time to create your first app. Here we are going to use the [API](https://www.themoviedb.org/documentation/api) for The Movie Data Base (TMDB) to get data and show it in our application but you can use any API you prefer. Here is a list of public API's: https://github.com/public-apis/public-apis
 
-With the TMDB we can create movie database app, where the user can search for movies, TV shows and crew members.
+With the TMDB we can create a movie database app, where the user can search for movies, TV shows and crew members.
 
 Since making CSS is not the goal here, we recommend you use a package with pre-made CSS components:
 * [Bootstrap](https://react-bootstrap.github.io/)
@@ -108,7 +108,7 @@ This is the page for a person. Here you can use the URL params to get the person
 * TV shows: https://developers.themoviedb.org/3/people/get-person-tv-credits
 * Movies: https://developers.themoviedb.org/3/people/get-person-movie-credits
 
-### 6. Connection everything
+### 6. Connecting everything
 Now that we have a specific page for everything we just need to add links so that, in the search results page, when a user click a result they are redirected to the specific page. Same thing for the credits, they should redirect to the correct person page.
 
 ### 7. Bonus
@@ -117,7 +117,7 @@ As a bonus, and if the rest was too easy for you, you can use the knowledge acqu
 
 ## The end
 
-Congratulations! 🎉 You have completed the beginners guide to React.js. This is the end of this chapter but the beginning of your journey with React.js so fell free to go back to the [start](/README.md) and learn more. After all, it's a never end story...
+Congratulations! 🎉 You have completed the beginners guide to React.js. This is the end of this chapter but the beginning of your journey with React.js so feel free to go back to the [start](/README.md) and learn more. After all, it's a never end story...
 
 <p align="center">
     <img src="https://i.giphy.com/9oEclSzXUfh5u.gif"/>
