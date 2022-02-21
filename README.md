@@ -1,6 +1,6 @@
 # React.js knowledge base
 
-<img src="assets/start_here.png" style="float: left; width: 200px; margin-right: 40px;"/>
+<img src="assets/start_here.png" align="left" style="width: 200px; margin-right: 40px;"/>
 
 Welcome to the __React.js__ knowledge base. 🚀
 
@@ -14,30 +14,28 @@ The following are all the top-level topics you can start with.
 
 <br/>
 
-## [Javascript, the React parts](/Javascript, the React parts.md)
+## [Javascript, the React parts](Javascript,%20the%29React%20parts.md)
 
-<img src="assets/es6.png" style="float: right; width: 100px; margin-left: 20px;"/>
+<img src="assets/es6.png" align="right" style="width: 100px; margin-left: 20px;"/>
 Assuming you already have some basic JavaScript knowledge, here you will find the resources you need to start tackling more modern JavaScript syntax that we feel matters the most for learning React and that will probably be very useful as you advance in the topic.
 
+<br/>
 <br/>
 
 ## Basic introduction to `npm`, `nvm` and `yarn`
 
 Building a React.js application involves using multiple packages and even versions of Node.js. That is why having a basic understanding of how `npm` works, what the advantages of using `yarn` are and how to manage your Node.js version with `nvm` is so important.
 
-<br/>
-
 ## React.js for beginners
 
 Now that you have the basics, it's time to grasp all the fundamentals of React and build your first applications. Here you will find a collection of tutorials that will help you do just that.
 
-<br/>
-
 ## Advanced React.js tools
 
-<img src="assets/redux.png" style="float: left; width: 100px; margin-right: 20px;"/>
+<img src="assets/redux.png" align="left" style="width: 100px; margin-right: 20px;"/>
 Building an application with React typically involves several tools. Here you will find resources on some of the most used ones to take your React.js journey to the next level. Things like, how to share state across your applications, how to test your components and more.
 
+<br/>
 <br/>
 
 ## Extra resources
