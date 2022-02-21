@@ -18,6 +18,9 @@ And to use one of the installed versions on the project, just run:
 ```
 nvm use 14.7.0
 ```
+
+<img src="assets/yarn_npm.jpg" align="right" style="width: 200px; margin-left: 20px;"/>
+
 To access the community made packages like libraries, plugins or frameworks, we have NPM and Yarn, both of these are package managers, where you can search the package library and import it to your own project. We’ll focus on Yarn since it makes locking packages to a certain version much easier and without needing to have to configure locking options.
 
 To install yarn just run:

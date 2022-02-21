@@ -1,4 +1,6 @@
 ## Redux
+<img src="assets/react_redux.png" align="right" style="width: 200px; margin-left: 20px;"/>
+
 Redux is a state manager library, it has an official integration with React, called [React-Redux](https://react-redux.js.org/), to learn more about this library you will dive through it's fundamentals with the maker of this tool, Dan Abramov, the tutorial is available [here](https://egghead.io/courses/fundamentals-of-redux-course-from-dan-abramov-bd5cc867).
 
 The objectives for this tutorial are:
@@ -7,7 +9,7 @@ The objectives for this tutorial are:
 - How to propagate the changes into the components;
 - Make a To-do list using this library;
   
-## Tools
+## 🛠 Tools
 To get a react app setup, there's some background work that still has to be done like setting up a webpack dev server, configuring your babel transpiler, etc. To make our lifes easier there are already tools that do this out of the box, but in order to use it, it helps understanding what they do. Apart from this setup shenanigans, in a real environment having your code supported by tests will help you preventing major code breaking releases. 
 
 [Here](https://www.tutorialspoint.com/babeljs/babeljs_working_babel_with_webpack.htm) you'll learn more about what Babel does and why do we need to setup webpack.
@@ -25,6 +27,9 @@ Objectives for these tutorials:
   - Mock page rendering;
 
 ## Next.js
+
+<img src="assets/next_js.png" align="right" style="width: 100px; margin-left: 20px;"/>
+
 Next.js is a framework that brings Server-Side Rendering, typescript support and even route handling to your react app out of the box with no need for importing more and more packages in order to add these features to your app. This will serve as the last tool you'll learn from our onboarding since this will use all of the concepts that were shown previously.
 
 With this [guide](https://nextjs.org/learn/basics/create-nextjs-app), you'll learn:
