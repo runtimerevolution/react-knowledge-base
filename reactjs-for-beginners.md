@@ -1,8 +1,16 @@
 # React.js for beginner
+<img src="assets/react.png" align="right" style="width: 200px; margin-left: 20px;"/>
+
+## Table of contents
+1. [What is React.js](#%E2%9A%9B%EF%B8%8F-what-is-reactjs)
+2. [Getting Started](#%F0%9F%9A%80-getting-started)
+3. [React Hooks](#%F0%9F%AA%9D-react-hooks)
+4. [React Router](#%E2%86%AA%EF%B8%8F-react-router)
+5. [Build your first app](#%F0%9F%A7%91%E2%80%8D%F0%9F%92%BB-build-your-first-app)
+
+<br/>
 
 ## ⚛️ What is React.js
-
-<img src="assets/react.png" align="right" style="width: 200px; margin-left: 20px;"/>
 
 `React.js` is an open-source JavaScript library that is used for building user interfaces specifically for single-page applications.
 
@@ -61,4 +69,60 @@ A great way to learn about React Router is using the [official tutorial](https:/
 
 ## 🧑‍💻 Build your first app
 
-TO DO
+<img src="assets/react2.png" align="right" style="width: 200px; margin-left: 20px;"/>
+
+That that you have learn the basics of React.js, it's time to create your first app. Here we are going to use the [API](https://www.themoviedb.org/documentation/api) for The Movie Data Base (TMDB) to get data and show it in our application but you can use any API you prefer. Here is a list of public API's: https://github.com/public-apis/public-apis
+
+With the TMDB we can create movie database app, where the user can search for movies, TV shows and crew members.
+
+Since making CSS is not the goal here, we recommend you use a package with pre-made CSS components:
+* [Bootstrap](https://react-bootstrap.github.io/)
+* [Material UI](https://mui.com/pt/)
+
+Here is our suggestion on where to start.
+
+### 1. Request an API key
+The API is free and available for everyone to use but in order to make request you need to create a user account and then [request an API key](https://www.themoviedb.org/settings/api).
+
+### 2. Create the home page
+This is the first page the user will see in your application. Here you can have show the 5 [most popular movies](https://developers.themoviedb.org/3/movies/get-popular-movies) as well as an input to allow the user to search by TV shows, movies or people using these endpoints:
+* TV Shows: https://developers.themoviedb.org/3/search/search-tv-shows
+* Movies: https://developers.themoviedb.org/3/search/search-movies
+* People: https://developers.themoviedb.org/3/search/search-people
+
+After clicking the search button — and if there is something to search for —, the user should be redirected to another page where the search results will appear (5 for each category is enough).
+
+### 3. TV Show page
+This is the page for the TV Show. Here you can use the URL params to get the TV show ID and show the following:
+* Details: https://developers.themoviedb.org/3/tv/get-tv-details
+* Credits: https://developers.themoviedb.org/3/tv-seasons/get-tv-season-aggregate-credits
+
+### 4. Movie page
+This is the page for the movie. Here you can use the URL params to get the movie ID and show the following:
+* Details: https://developers.themoviedb.org/3/movies/get-movie-details
+* Credits: https://developers.themoviedb.org/3/movies/get-movie-credits
+
+### 5. Person page
+This is the page for a person. Here you can use the URL params to get the person ID and show the following:
+* Details https://developers.themoviedb.org/3/people/get-person-details
+* TV shows: https://developers.themoviedb.org/3/people/get-person-tv-credits
+* Movies: https://developers.themoviedb.org/3/people/get-person-movie-credits
+
+### 6. Connection everything
+Now that we have a specific page for everything we just need to add links so that, in the search results page, when a user click a result they are redirected to the specific page. Same thing for the credits, they should redirect to the correct person page.
+
+### 7. Bonus
+As a bonus, and if the rest was too easy for you, you can use the knowledge acquired in the previous steps to deploy your app and show it off. 🚀
+
+<br/>
+
+---
+<br/>
+
+## The end
+
+Congratulations! 🎉 You have completed the beginners guide to React.js. This is the end of this chapter but the beginning of your journey with React.js so fell free to go back to the [start](/README.md) and learn more. After all, it's a never end story...
+
+<p align="center">
+    <img src="https://i.giphy.com/9oEclSzXUfh5u.gif"/>
+</p>

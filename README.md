@@ -38,3 +38,7 @@ Building an application with React typically involves several tools. Here you wi
 ## Extra resources
 
 While creating this knowledge base and during our daily coding adventures, we found some interesting resources that didn't have a place to live but that we didn't want to forget so we decided to create this page. Here you will find a list of interesting React related resources. And again, feel free do add you own cool findings. 🖖
+
+<p align="center">
+  <img src="https://i.giphy.com/11ISwbgCxEzMyY.gif" />
+</p>
