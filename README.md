@@ -14,7 +14,7 @@ The following are all the top-level topics you can start with.
 
 <br/>
 
-## [Javascript, the React parts](Javascript,%20the%29React%20parts.md)
+## [Javascript, the React parts](Javascript,%20the%20React%20parts.md)
 
 <img src="assets/es6.png" align="right" style="width: 100px; margin-left: 20px;"/>
 Assuming you already have some basic JavaScript knowledge, here you will find the resources you need to start tackling more modern JavaScript syntax that we feel matters the most for learning React and that will probably be very useful as you advance in the topic.
