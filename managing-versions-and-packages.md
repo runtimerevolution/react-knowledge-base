@@ -1,4 +1,9 @@
-# Basic introduction to `nvm`, `npm`, and `yarn`
+# Managing versions and packages
+
+## Table of contents
+1. [Node Version Manager](#node-version-manager)
+2. [Node Package Manager](#node-package-manager)
+3. [Yarn](#yarn)
 
 ## Node Version Manager
 
