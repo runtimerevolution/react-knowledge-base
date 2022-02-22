@@ -6,7 +6,8 @@
 2. [Getting Started](#rocket-getting-started)
 3. [React Hooks](#hook-react-hooks)
 4. [React Router](#arrow_right_hook-react-router)
-5. [Build your first app](#technologist-build-your-first-app)
+5. [Authentication](#lock-authentication)
+6. [Build your first app](#technologist-build-your-first-app)
 
 <br/>
 
@@ -64,8 +65,20 @@ A great way to learn about React Router is using the [official tutorial](https:/
 * Navigating programmatically
 * Using URL params for data loading
 * Using URL Search params
+* Adding authenticated routes
 * Creating your own behaviors through composition
 * Server Rendering
+  
+
+## :lock: Authentication
+
+In real use cases, your web application will need to be authenticated, like profile pages or even just managing your favourite movie lists. The authentication flow will be different from app to app, some apps will need to authenticate via an authorization server, others via an API and even through SSOs (Single Sign On), but the majority of these implementations will have something in common, using a JWT (JSON Web Token) to identify and authorize your user. There are many ways to store this token such as:
+* Cookies - using this [package](https://www.npmjs.com/package/react-cookie) for example
+* Local Storage - this uses your browser local storage and will be available through the Window.localStorage [API](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) and there is already an implementation using the React hooks [here](https://usehooks-ts.com/react-hook/use-local-storage)
+
+There are plenty more options, some of them are more easier to implement, others more difficult but they add more security to your app, you can look into this [guide](https://www.digitalocean.com/community/tutorials/how-to-add-login-authentication-to-react-applications) and follow an implementation of an authentication flow in a React App.
+
+As you learned on the previous step, you can even use React Router to prevent unauthenticated users to access certain routes of your app, so building a Route component that uses the token described previously to authorize users is one of the most common patterns in setting up Authentication and Authorization in your app.
 
 ## :technologist: Build your first app
 
