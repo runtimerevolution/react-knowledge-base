@@ -65,7 +65,6 @@ A great way to learn about React Router is using the [official tutorial](https:/
 * Navigating programmatically
 * Using URL params for data loading
 * Using URL Search params
-* Adding authenticated routes
 * Creating your own behaviors through composition
 * Server Rendering
   
@@ -78,7 +77,7 @@ In real use cases, your web application will need to be authenticated, like prof
 
 There are plenty more options, some of them are more easier to implement, others more difficult but they add more security to your app, you can look into this [guide](https://www.digitalocean.com/community/tutorials/how-to-add-login-authentication-to-react-applications) and follow an implementation of an authentication flow in a React App.
 
-As you learned on the previous step, you can even use React Router to prevent unauthenticated users to access certain routes of your app, so building a Route component that uses the token described previously to authorize users is one of the most common patterns in setting up Authentication and Authorization in your app.
+Using the React Router library (see [here](#arrow_right_hook-react-router)), you can prevent unauthenticated users from accessing certain routes of your app, so building a Route component that uses the token described previously to authorize users is one of the most common patterns in setting up Authentication and Authorization in your app. The official documentation has an example on how to setup authenticated routes [here](https://reactrouter.com/docs/en/v6/examples/auth).
 
 ## :technologist: Build your first app
 
