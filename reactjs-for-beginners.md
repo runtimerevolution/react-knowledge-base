@@ -130,7 +130,7 @@ As a bonus, and if the rest was too easy for you, you can use the knowledge acqu
 
 ## The end
 
-Congratulations! 🎉 You have completed the beginners guide to React.js. This is the end of this chapter but the beginning of your journey with React.js so feel free to go back to the [start](/README.md) and learn more. After all, it's a never end story...
+Congratulations! 🎉 You have completed the beginners guide to React.js. This is the end of this chapter but the beginning of your journey with React.js so feel free to [go back to the start](/README.md) and learn more. After all, it's a never end story...
 
 <p align="center">
     <img src="https://i.giphy.com/9oEclSzXUfh5u.gif"/>

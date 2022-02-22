@@ -19,7 +19,7 @@ Assuming you already have some basic JavaScript knowledge, here you will find th
 
 <br/>
 
-## [Basic introduction to `npm`, `nvm` and `yarn`](basic-dev-tools.md)
+## [Managing versions and packages](/managing-versions-and-packages.md)
 
 Building a React.js application involves using multiple packages and even versions of Node.js. That is why having a basic understanding of how `npm` works, what the advantages of using `yarn` are and how to manage your Node.js version with `nvm` is so important.
 
@@ -27,7 +27,7 @@ Building a React.js application involves using multiple packages and even versio
 
 Now that you have the basics, it's time to grasp all the fundamentals of React and build your first applications. Here you will find a collection of tutorials that will help you do just that.
 
-## [Advanced React.js tools](advanced-tools.md)
+## [Advanced React.js tools](/advanced-tools.md)
 
 <img src="assets/redux.png" align="left" style="width: 100px; margin-right: 20px;"/>
 Building an application with React typically involves several tools. Here you will find resources on some of the most used ones to take your React.js journey to the next level. Things like, how to share state across your applications, how to test your components and more.
