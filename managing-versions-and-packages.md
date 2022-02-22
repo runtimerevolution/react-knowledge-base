@@ -10,8 +10,6 @@ It allows you to locally download any of the remote Long Term Support (LTS) vers
 
 ### Installation
 
-To easily install NVM on our local machines — and remove any existing versions — we are going to use [Homebrew](https://brew.sh/).
-
 #### Remove existing versions
 First, remove existing Node.js versions with the following commands. If this is your first time using Node.js and you don't have any versions installed yet you can just skip this step.
 
@@ -25,17 +23,15 @@ brew uninstall --force node
 Now, you system is ready for the installation. Update the Homebrew package list and install NVM.
 
 ```
-brew update 
-brew install nvm 
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 ```
 
 Now, configure the required environment variables by adding the below lines to `~/.bash_profile` (or `~/.zshrc` for macOS Catalina or later). You can use `open ~/.zshrc` in the command line to open the files.
 
 ```bash
 # nvm
-export NVM_DIR="$HOME/.nvm"
-  [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
-  [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" 
 ```
 
 ### Installing a Node.js version with NVM
@@ -93,7 +89,7 @@ npm uninstall <package name>
 
 Since then, `npm` has undergone several improvements to fix some of its inefficiencies. As a result `npm` and `yarn` are now in a neck-to-neck race over which package manager trumps the other.
 
-According to the official documentations,  the recommended way to install Yarn in your project is through the node package manager using the following command:
+According to the official documentations, the recommended way to install Yarn in your project is through the node package manager using the following command:
 
 ```
 npm install yarn
