@@ -15,7 +15,7 @@ The following are all the top-level topics you can start with.
 ## [Javascript, the React parts](/javascript-for-react.md)
 
 <img src="assets/es6.png" align="right" style="width: 100px; margin-left: 20px;"/>
-Assuming you already have some basic JavaScript knowledge, here you will find the resources you need to start tackling more modern JavaScript syntax that we feel that matters the most for learning React and that will probably be very useful as you advance in the topic.
+Assuming you already have some basic JavaScript knowledge, here you will find the resources you need to start tackling more modern JavaScript syntax that we feel  matters the most for learning React and that will probably be very useful as you advance in the topic.
 
 <br/>
 
