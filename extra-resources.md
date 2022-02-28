@@ -4,7 +4,7 @@
 
 While creating this knowledge base and during our daily coding adventures, we found some interesting resources that didn't have a place to live but that we didn't want to forget so we decided to create this page.
 
-Feel free do add you own cool findings.
+Feel free to add your own cool findings.
 
 * [A collection of awesome things regarding React ecosystem](https://github.com/enaqx/awesome-react)
 * [Finally a better react.js folder structure](https://medium.com/@kumarvinoth/finally-a-better-react-js-folder-structure-821a2210835)

@@ -7,11 +7,11 @@
 
 ## Node Version Manager
 
-During your journey React.js you will probably work on many projects that use different versions of Node.js. That is where a version manager comes in hand.
+During your journey React.js, you will probably work on many projects that use different versions of Node.js. That is where a version manager comes in handy.
 
 [Node Version Manager](https://github.com/nvm-sh/nvm) (NVM) is a tool used to manage multiple active Node.js versions.
 
-It allows you to locally download any of the remote Long Term Support (LTS) versions of Node.js with a simple command; easily switch between multiple versions of Node.js, right from the command line and even set up aliases to switch between different downloaded versions of Node.js with ease.
+It allows you to locally download any of the remote Long Term Support (LTS) versions of Node.js with a simple command; easily switch between multiple versions of Node.js, right from the command line, and even set up aliases to switch between different downloaded versions of Node.js with ease.
 
 ### Installation
 
@@ -25,7 +25,7 @@ brew uninstall --force node
 
 #### Install NVM
 
-Now, you system is ready for the installation. Update the Homebrew package list and install NVM.
+Now, your system is ready for installation. Update the Homebrew package list and install NVM.
 
 ```
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
@@ -47,7 +47,7 @@ First of all, see what Node versions are available to install. To see available 
 nvm ls-remote
 ```
 
-Now, you can install any version listed in above output. You can also use aliases names like node for latest version, lts for latest LTS version, etc.
+Now, you can install any version listed in the above output. You can also use aliases names like `node` for latest version, `lts` for latest LTS version, etc.
 
 ```
 nvm install node     # Installing Latest version 
@@ -60,7 +60,7 @@ After installing you can verify what is installed with:
 nvm ls 
 ```
 
-If you have installed multiple versions on your system, you can set any version as the default version any time. To set the node 14.X as default version, simply use:
+If you have installed multiple versions on your system, you can set any version as the default version at any time. To set the node 14.X as the default version, simply use:
 
 ```
 nvm use 14
@@ -76,7 +76,7 @@ Similarly, you can install other versions like Node 12.X or Node 15 and switch b
 
 It consists of three components: [the website](https://www.npmjs.com/) to manage various aspects of your npm experience, Command Line Interface (CLI) to interact with npm via the terminal, and registry to access an extensive public database of JavaScript software as well as publish your own. 
 
-To install a package using NPM you can search for it in the website, select the package, for example the [`react`](https://www.npmjs.com/package/react) package, and run the install command.
+To install a package using NPM you can search for it on the website, select the package, for example, the [`react`](https://www.npmjs.com/package/react) package, and run the install command.
 
 ```
 npm install <package name>
@@ -92,15 +92,15 @@ npm uninstall <package name>
 
 [Yarn](https://classic.yarnpkg.com/en/) is another popular package manager for the JavaScript programming language. The intention behind creating Yarn was to address some of the performance and security shortcomings of working with `npm` (at that time).
 
-Since then, `npm` has undergone several improvements to fix some of its inefficiencies. As a result `npm` and `yarn` are now in a neck-to-neck race over which package manager trumps the other.
+Since then, `npm` has undergone several improvements to fix some of its inefficiencies. As a result, `npm` and `yarn` are now in a neck-to-neck race over which package manager trumps the other.
 
-According to the official documentations, the recommended way to install Yarn in your project is through the node package manager using the following command:
+According to the official documentation, the recommended way to install Yarn in your project is through the node package manager using the following command:
 
 ```
 npm install yarn
 ```
 
-To install a package using Yarn you can search for it in the website, select the package, for example the [`react`](https://classic.yarnpkg.com/en/package/react) package, and run the install command.
+To install a package using Yarn you can search for it on the website, select the package, for example, the [`react`](https://classic.yarnpkg.com/en/package/react) package, and run the install command.
 
 ```
 yarn add <package name>
