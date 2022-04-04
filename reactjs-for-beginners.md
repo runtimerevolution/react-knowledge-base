@@ -1,4 +1,4 @@
-# React.js for beginner
+# React.js for beginners
 <img src="assets/react.png" align="right" style="width: 200px; margin-left: 20px;"/>
 
 ## Table of contents
