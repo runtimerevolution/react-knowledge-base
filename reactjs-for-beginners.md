@@ -96,14 +96,10 @@ Since making CSS is not the goal here, we recommend you use a package with pre-m
 
 Here is our suggestion on where to start.
 
-<div class="callout">
-    <div>💡</div>
-    <div>
-        <div class="title">Useful tip</div>
-        <p>A good way to organize your app is by using these 4 folders: <strong>pages</strong>, where you will have your page components; <strong>components</strong>, where you will store the components used by your pages; <strong>assets</strong>, where you can store things like CSS files and images used; and <strong>helpers</strong>, where you can store files with helper functions, like the ones you can create to make any requests to the API.</p>
-        <p>If you are interested in learning more about folder structure, here is an <a href="https://medium.com/@kumarvinoth/finally-a-better-react-js-folder-structure-821a2210835">interesting blog post</a> about that.</p>
-    </div>
-</div>
+| 💡 **Useful tip** |
+|:--|
+| A good way to organize your app is by using these 4 folders: **pages**, where you will have your page components; **components**, where you will store the components used by your pages; **assets**, where you can store things like CSS files and images used; and **helpers**, where you can store files with helper functions, like the ones you can create to make any requests to the API. If you are interested in learning more about folder structure, here is an [interesting blog post](https://medium.com/@kumarvinoth/finally-a-better-react-js-folder-structure-821a2210835) about that. |
+
 
 ### 1. Request an API key
 The API is free and available for everyone to use but to make a request you need to create a user account and then [request an API key](https://www.themoviedb.org/settings/api).
@@ -113,14 +109,9 @@ This is the first page the user will see in your application. Here you can have 
 
 After clicking the search button — and if there is something to search for —, the user should be redirected to another page where the search results will appear (5 for each category is enough).
 
-<div class="callout">
-    <div>💡</div>
-    <div>
-        <div class="title">Useful tip</div>
-        <p>At the beginning you can focus on just having a simple input that records the user input and a button that, when clicked, redirects the user to the page <code>/results?search=user-input</code>, where you can just show the user input inside a <code>div</code>.</p>
-        <p>After that you can increased the complexity by making your requests and showing the results as buttons. That way you can test just the basic structure of your app without having to worry about styles and showing the complete information.</p>
-    </div>
-</div>
+| 💡 **Useful tip** |
+|:--|
+| At the beginning you can focus on just having a simple input that records the user input and a button that, when clicked, redirects the user to the page `/results?search=user-input`, where you can just show the user input inside a `div`. After that you can increased the complexity by making your requests and showing the results as buttons. That way you can test just the basic structure of your app without having to worry about styles and showing the complete information. |
 
 
 ### 3. TV Show page
@@ -153,20 +144,3 @@ Congratulations! 🎉 You have completed the beginners' guide to React.js. This 
 <p align="center">
     <img src="https://i.giphy.com/9oEclSzXUfh5u.gif"/>
 </p>
-
-<!--- CSS -->
-<style>
-.callout {
-    border-left: 5px solid #2993d9;
-    padding: 10px;
-    background-color: rgba(43, 148, 218, 0.25);
-    border-radius: 5px;
-    display: flex;
-    gap: 10px;
-    margin: 20px 0;
-}
-
-.callout .title {
-    font-weight: bold;
-}
-</style>
