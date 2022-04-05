@@ -52,6 +52,8 @@ Since they were already introduced in the [The Beginner's Guide to React](#the-b
     * Render multiple pages in a Wizard form
     * Handle complex state updates with useReducer
 
+Here is the [github repo](https://github.com/matiasfha/egghead-build-wizard-with-hooks-collection) for that course.
+
 ## :arrow_right_hook: React Router
 
 Even though React is built for single-page applications we can still build apps with multiple routes using [React Router](https://reactrouter.com/). It allows you to handle routes in a web app, using _dynamic routing_,  meaning routing that takes place as your app is rendering, not in a configuration or convention outside of a running app. That means almost everything is a component in React Router.
@@ -88,21 +90,38 @@ Now that you have learned the basics of React.js, it's time to create your first
 With the TMDB we can create a movie database app, where the user can search for movies, TV shows, and crew members.
 
 Since making CSS is not the goal here, we recommend you use a package with pre-made CSS components:
+* [Bulma](https://bulma.io/)
 * [Bootstrap](https://react-bootstrap.github.io/)
 * [Material UI](https://mui.com/pt/)
 
 Here is our suggestion on where to start.
 
+<div class="callout">
+    <div>💡</div>
+    <div>
+        <div class="title">Useful tip</div>
+        <p>A good way to organize your app is by using these 4 folders: <strong>pages</strong>, where you will have your page components; <strong>components</strong>, where you will store the components used by your pages; <strong>assets</strong>, where you can store things like CSS files and images used; and <strong>helpers</strong>, where you can store files with helper functions, like the ones you can create to make any requests to the API.</p>
+        <p>If you are interested in learning more about folder structure, here is an <a href="https://medium.com/@kumarvinoth/finally-a-better-react-js-folder-structure-821a2210835">interesting blog post</a> about that.</p>
+    </div>
+</div>
+
 ### 1. Request an API key
 The API is free and available for everyone to use but to make a request you need to create a user account and then [request an API key](https://www.themoviedb.org/settings/api).
 
 ### 2. Create the home page
-This is the first page the user will see in your application. Here you can have show the 5 [most popular movies](https://developers.themoviedb.org/3/movies/get-popular-movies) as well as an input to allow the user to search by TV shows, movies, or people using these endpoints:
-* TV Shows: https://developers.themoviedb.org/3/search/search-tv-shows
-* Movies: https://developers.themoviedb.org/3/search/search-movies
-* People: https://developers.themoviedb.org/3/search/search-people
+This is the first page the user will see in your application. Here you can have show the 5 [most popular movies](https://developers.themoviedb.org/3/movies/get-popular-movies) as well as an input to allow the user to search by TV shows, movies, or people using this endpoint: https://developers.themoviedb.org/3/search/multi-search
 
 After clicking the search button — and if there is something to search for —, the user should be redirected to another page where the search results will appear (5 for each category is enough).
+
+<div class="callout">
+    <div>💡</div>
+    <div>
+        <div class="title">Useful tip</div>
+        <p>At the beginning you can focus on just having a simple input that records the user input and a button that, when clicked, redirects the user to the page <code>/results?search=user-input</code>, where you can just show the user input inside a <code>div</code>.</p>
+        <p>After that you can increased the complexity by making your requests and showing the results as buttons. That way you can test just the basic structure of your app without having to worry about styles and showing the complete information.</p>
+    </div>
+</div>
+
 
 ### 3. TV Show page
 This is the page for the TV Show. Here you can use the URL params to get the TV show ID and show the following:
@@ -134,3 +153,20 @@ Congratulations! 🎉 You have completed the beginners' guide to React.js. This 
 <p align="center">
     <img src="https://i.giphy.com/9oEclSzXUfh5u.gif"/>
 </p>
+
+<!--- CSS -->
+<style>
+.callout {
+    border-left: 5px solid #2993d9;
+    padding: 10px;
+    background-color: rgba(43, 148, 218, 0.25);
+    border-radius: 5px;
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.callout .title {
+    font-weight: bold;
+}
+</style>
