@@ -10,3 +10,6 @@ Feel free to add your own cool findings.
 * [Finally a better react.js folder structure](https://medium.com/@kumarvinoth/finally-a-better-react-js-folder-structure-821a2210835)
 * [State Management best practices](https://medium.com/@meric.emmanuel/react-state-management-best-practices-for-2021-aka-no-redux-11f0459c22c1)
 * [A Complete Guide to useEffect](https://overreacted.io/a-complete-guide-to-useeffect/)
+* [The Guide to Learning React Hooks
+(Examples & Tutorials)](https://www.telerik.com/kendo-react-ui/react-hooks-guide/)
+* [Learn React JS with Project in 2 Hours (YouTube)](https://www.youtube.com/watch?v=0riHps91AzE)
