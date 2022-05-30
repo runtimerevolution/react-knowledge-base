@@ -159,7 +159,7 @@ This is the page for a person. Here you can use the URL params to get the person
 * TV shows: https://developers.themoviedb.org/3/people/get-person-tv-credits
 * Movies: https://developers.themoviedb.org/3/people/get-person-movie-credits
 
-#### 5. Bonus
+### Bonus
 As a bonus, and if the rest was too easy for you, you can use the knowledge acquired in the previous steps to deploy your app and show it off. 🚀
 
 ## The end
