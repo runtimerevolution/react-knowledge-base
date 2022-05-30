@@ -5,7 +5,7 @@
 1. [What is React.js](#atom_symbol-what-is-reactjs)
 2. [Getting Started](#rocket-getting-started)
 3. [React Hooks](#hook-react-hooks)
-4. [React Router](#arrow_right_hook-react-router)
+4. [Next.JS](#arrow_right_hook-nextjs)
 5. [Authentication](#lock-authentication)
 6. [Build your first app](#technologist-build-your-first-app)
 
@@ -54,22 +54,21 @@ Since they were already introduced in the [The Beginner's Guide to React](#the-b
 
 Here is the [github repo](https://github.com/matiasfha/egghead-build-wizard-with-hooks-collection) for that course.
 
-## :arrow_right_hook: React Router
+## :arrow_right_hook: Next.JS
 
-Even though React is built for single-page applications we can still build apps with multiple routes using [React Router](https://reactrouter.com/). It allows you to handle routes in a web app, using _dynamic routing_,  meaning routing that takes place as your app is rendering, not in a configuration or convention outside of a running app. That means almost everything is a component in React Router.
+<img src="assets/next_js.png" align="right" style="width: 100px; margin-left: 20px;"/>
 
-A great way to learn about React Router is using the [official tutorial](https://reactrouter.com/docs/en/v6/getting-started/tutorial) that will cover the following topics:
+Next.js is a framework that brings Server-Side Rendering, typescript support, and even route handling to your react app out of the box with no need for importing more and more packages in order to add these features to your app. This will serve as the last tool you'll learn from our onboarding since this will use all of the concepts that were shown previously.
 
-* Configuring Routes
-* Navigating with Link
-* Creating Links with active styling
-* Using Nested Routes for Layout
-* Navigating programmatically
-* Using URL params for data loading
-* Using URL Search params
-* Creating your own behaviors through composition
-* Server Rendering
+With this [guide](https://nextjs.org/learn/basics/create-nextjs-app), you'll learn:
+- How to setup a next.js app;
+- Add routing based on your file system routing;
+- Differences between Client Side Rendering and Server Side Rendering;
+- Migrating an app from Javascript to Typescript;
   
+| **Extra** |
+|:--|
+| You can also check this tutorial https://www.youtube.com/watch?v=A63UxsQsEbU&list=PL4cUxeGkcC9g9gP2onazU5-2M-AzA8eBw |
 
 ## :lock: Authentication
 
@@ -79,33 +78,33 @@ In real use cases, your web application will need to be authenticated, like prof
 
 There are plenty more options, some of them are easier to implement, others more difficult but they add more security to your app, you can look into this [guide](https://www.digitalocean.com/community/tutorials/how-to-add-login-authentication-to-react-applications) and follow the implementation of an authentication flow in a React App.
 
-Using the React Router library (see [here](#arrow_right_hook-react-router)), you can prevent unauthenticated users from accessing certain routes of your app, so building a Route component that uses the token described previously to authorize users is one of the most common patterns in setting up Authentication and Authorization in your app. The official documentation has an example of how to set up authenticated routes [here](https://reactrouter.com/docs/en/v6/examples/auth).
-
 ## :technologist: Build your first app
 
 <img src="assets/react2.png" align="right" style="width: 200px; margin-left: 20px;"/>
 
 Now that you have learned the basics of React.js, it's time to create your first app. Here we are going to use the [API](https://www.themoviedb.org/documentation/api) for The Movie Data Base (TMDB) to get data and show it in our application but you can use any API you prefer. Here is a list of public APIs: https://github.com/public-apis/public-apis
 
-With the TMDB we can create a movie database app, where the user can search for movies, TV shows, and crew members.
+With the TMDB we can create a movie database app, where the user can search for movies.
 
 Since making CSS is not the goal here, we recommend you use a package with pre-made CSS components:
 * [Bulma](https://bulma.io/)
 * [Bootstrap](https://react-bootstrap.github.io/)
 * [Material UI](https://mui.com/pt/)
+* [Tailwind CSS](https://tailwindcss.com/)
 
 Here is our suggestion on where to start.
 
 | 💡 **Useful tip** |
 |:--|
-| A good way to organize your app is by using these 4 folders: **pages**, where you will have your page components; **components**, where you will store the components used by your pages; **assets**, where you can store things like CSS files and images used; and **helpers**, where you can store files with helper functions, like the ones you can create to make any requests to the API. If you are interested in learning more about folder structure, here is an [interesting blog post](https://medium.com/@kumarvinoth/finally-a-better-react-js-folder-structure-821a2210835) about that. |
+| To make the start easy you can use the app that was created for the Next.JS tutorial |
 
+### Starting with the basics
 
-### 1. Request an API key
+#### 1. Request an API key
 The API is free and available for everyone to use but to make a request you need to create a user account and then [request an API key](https://www.themoviedb.org/settings/api).
 
-### 2. Create the home page
-This is the first page the user will see in your application. Here you can have show the 5 [most popular movies](https://developers.themoviedb.org/3/movies/get-popular-movies) as well as an input to allow the user to search by TV shows, movies, or people using this endpoint: https://developers.themoviedb.org/3/search/multi-search
+#### 2. Create the home page
+This is the first page the user will see in your application. Here you can have show the 5 [most popular movies](https://developers.themoviedb.org/3/movies/get-popular-movies) as well as an input to allow the user to search by movies using this endpoint: [Movie Search](https://developers.themoviedb.org/3/search/search-movies)
 
 After clicking the search button — and if there is something to search for —, the user should be redirected to another page where the search results will appear (5 for each category is enough).
 
@@ -113,29 +112,37 @@ After clicking the search button — and if there is something to search for —
 |:--|
 | At the beginning you can focus on just having a simple input that records the user input and a button that, when clicked, redirects the user to the page `/results?search=user-input`, where you can just show the user input inside a `div`. After that you can increased the complexity by making your requests and showing the results as buttons. That way you can test just the basic structure of your app without having to worry about styles and showing the complete information. |
 
+#### 3. Movie page
+This is the page for the movie. Here you can use the URL params to get the movie ID and show the following:
+* Details: https://developers.themoviedb.org/3/movies/get-movie-details
 
-### 3. TV Show page
+#### 4. Connecting everything
+Now that we have a specific page for everything we just need to add links so that, in the search results page, when a user clicks a result they are redirected to the specific page.
+
+### Adding some spice 🌶️
+
+#### 1. Add more search options
+Update the seach input to allow the user to search by TV shows, movies, or people using this endpoint: https://developers.themoviedb.org/3/search/multi-search.
+
+After clicking the search button — and if there is something to search for —, the user should be redirected to another page where the search results will appear (5 for each category is enough).
+
+#### 2. TV Show page
 This is the page for the TV Show. Here you can use the URL params to get the TV show ID and show the following:
 * Details: https://developers.themoviedb.org/3/tv/get-tv-details
 * Credits: https://developers.themoviedb.org/3/tv-seasons/get-tv-season-aggregate-credits
 
-### 4. Movie page
-This is the page for the movie. Here you can use the URL params to get the movie ID and show the following:
-* Details: https://developers.themoviedb.org/3/movies/get-movie-details
+#### 3. Movie page
+Add the credits information to the already built Movie page using the following endpoint:
 * Credits: https://developers.themoviedb.org/3/movies/get-movie-credits
 
-### 5. Person page
+#### 4. Person page
 This is the page for a person. Here you can use the URL params to get the person ID and show the following:
 * Details https://developers.themoviedb.org/3/people/get-person-details
 * TV shows: https://developers.themoviedb.org/3/people/get-person-tv-credits
 * Movies: https://developers.themoviedb.org/3/people/get-person-movie-credits
 
-### 6. Connecting everything
-Now that we have a specific page for everything we just need to add links so that, in the search results page, when a user clicks a result they are redirected to the specific page. The same thing for the credits, they should redirect to the correct person page.
-
-### 7. Bonus
+#### 5. Bonus
 As a bonus, and if the rest was too easy for you, you can use the knowledge acquired in the previous steps to deploy your app and show it off. 🚀
-
 
 ## The end
 
