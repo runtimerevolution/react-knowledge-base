@@ -5,9 +5,10 @@
 1. [What is React.js](#atom_symbol-what-is-reactjs)
 2. [Getting Started](#rocket-getting-started)
 3. [React Hooks](#hook-react-hooks)
-4. [Next.JS](#arrow_right_hook-nextjs)
-5. [Authentication](#lock-authentication)
-6. [Build your first app](#technologist-build-your-first-app)
+4. [Next.js](#arrow_right_hook-nextjs)
+5. [React Router](#arrow_right_hook-react-router)
+6. [Authentication](#lock-authentication)
+7. [Build your first app](#technologist-build-your-first-app)
 
 <br/>
 
@@ -54,14 +55,14 @@ Since they were already introduced in the [The Beginner's Guide to React](#the-b
 
 Here is the [github repo](https://github.com/matiasfha/egghead-build-wizard-with-hooks-collection) for that course.
 
-## :arrow_right_hook: Next.JS
+## :arrow_right_hook: Next.js
 
 <img src="assets/next_js.png" align="right" style="width: 100px; margin-left: 20px;"/>
 
 Next.js is a framework that brings Server-Side Rendering, typescript support, and even route handling to your react app out of the box with no need for importing more and more packages in order to add these features to your app. This will serve as the last tool you'll learn from our onboarding since this will use all of the concepts that were shown previously.
 
 With this [guide](https://nextjs.org/learn/basics/create-nextjs-app), you'll learn:
-- How to setup a next.js app;
+- How to setup a Next.js app;
 - Add routing based on your file system routing;
 - Differences between Client Side Rendering and Server Side Rendering;
 - Migrating an app from Javascript to Typescript;
@@ -69,6 +70,22 @@ With this [guide](https://nextjs.org/learn/basics/create-nextjs-app), you'll lea
 | **Extra** |
 |:--|
 | You can also check this tutorial https://www.youtube.com/watch?v=A63UxsQsEbU&list=PL4cUxeGkcC9g9gP2onazU5-2M-AzA8eBw |
+
+## :arrow_right_hook: React Router
+
+Even though React is built for single-page applications we can still build apps with multiple routes using [React Router](https://reactrouter.com/). It allows you to handle routes in a web app, using _dynamic routing_,  meaning routing that takes place as your app is rendering, not in a configuration or convention outside of a running app. That means almost everything is a component in React Router.
+
+A great way to learn about React Router is using the [official tutorial](https://reactrouter.com/docs/en/v6/getting-started/tutorial) that will cover the following topics:
+
+* Configuring Routes
+* Navigating with Link
+* Creating Links with active styling
+* Using Nested Routes for Layout
+* Navigating programmatically
+* Using URL params for data loading
+* Using URL Search params
+* Creating your own behaviors through composition
+* Server Rendering
 
 ## :lock: Authentication
 
@@ -84,7 +101,7 @@ There are plenty more options, some of them are easier to implement, others more
 
 Now that you have learned the basics of React.js, it's time to create your first app. Here we are going to use the [API](https://www.themoviedb.org/documentation/api) for The Movie Data Base (TMDB) to get data and show it in our application but you can use any API you prefer. Here is a list of public APIs: https://github.com/public-apis/public-apis
 
-With the TMDB we can create a movie database app, where the user can search for movies.
+With the TMDB we can create a movie database app, where the user can search for movies, TV shows, and crew members.
 
 Since making CSS is not the goal here, we recommend you use a package with pre-made CSS components:
 * [Bulma](https://bulma.io/)
@@ -96,7 +113,8 @@ Here is our suggestion on where to start.
 
 | 💡 **Useful tip** |
 |:--|
-| To make the start easy you can use the app that was created for the Next.JS tutorial |
+| If you are using Next.js: To make the start easy you can use the app that was created for the Next.js tutorial |
+| If you are using React Router: A good way to organize your app is by using these 4 folders: **pages**, where you will have your page components; **components**, where you will store the components used by your pages; **assets**, where you can store things like CSS files and images used; and **helpers**, where you can store files with helper functions, like the ones you can create to make any requests to the API. If you are interested in learning more about folder structure, here is an [interesting blog post](https://medium.com/@kumarvinoth/finally-a-better-react-js-folder-structure-821a2210835) about that. |
 
 ### Starting with the basics
 
