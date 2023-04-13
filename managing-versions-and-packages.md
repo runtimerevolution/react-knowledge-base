@@ -117,10 +117,12 @@ yarn remove react
 ## What package manager should you use
 They both work well, so the choice between them is really up to you.
 
-If you want faster package installation and better error messages, try Yarn. If you want to use the same version of a package across different machines, use Yarn's lockfile feature.
+However, it's worth remembering that the intention behind developing yarn was to fix performance and security concerns with npm. Yarn is generally faster than npm, especially when it comes to installing packages.
 
-If you already know npm, stick with it. If you want a bigger community or you're more familiar with its commands, npm is a great choice too.
+Also, yarn generates a `yarn.lock` file that is generally considered more reliable that npm's `package-lock.json` when it comes to ensuring consistency across different machines.
 
-[Here](https://www.geeksforgeeks.org/difference-between-npm-and-yarn/) is a cool article about the differences between them.
+That being said, if you want a bigger community, if you already know npm or prefer its commands, it's a great choice too. Ultimately, the decision between yarn and npm depends on your personal preference and the specific needs of your project.
+
+[Here](https://www.geeksforgeeks.org/difference-between-npm-and-yarn/) is a cool article if you want to know more about the differences between the two of them.
 
 [<< Back](/README.md)
