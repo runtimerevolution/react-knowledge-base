@@ -25,19 +25,8 @@ brew uninstall --force node
 
 #### Install NVM
 
-Now, your system is ready for installation. Update the Homebrew package list and install NVM.
+Now, your system is ready for installation. You can follow the [official NVM documentation](https://github.com/nvm-sh/nvm#installing-and-updating) for the most updated way to install NVM locally.
 
-```
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
-```
-
-Now, configure the required environment variables by adding the below lines to `~/.bash_profile` (or `~/.zshrc` for macOS Catalina or later). You can use `open ~/.zshrc` in the command line to open the files.
-
-```bash
-# nvm
-export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" 
-```
 
 ### Installing a Node.js version with NVM
 
@@ -97,7 +86,15 @@ Since then, `npm` has undergone several improvements to fix some of its ineffici
 According to the official documentation, the recommended way to install Yarn in your project is through the node package manager using the following command:
 
 ```
-npm install yarn
+# npm 6.x
+
+npm install yarn --global
+```
+
+```
+# npm 7+, extra double-dash is needed:
+
+npm install yarn -- --global
 ```
 
 To install a package using Yarn you can search for it on the website, select the package, for example, the [`react`](https://classic.yarnpkg.com/en/package/react) package, and run the install command.
@@ -116,5 +113,14 @@ And to uninstall it:
 ```
 yarn remove react
 ```
+
+## What package manager should you use
+They both work well, so the choice between them is really up to you.
+
+If you want faster package installation and better error messages, try Yarn. If you want to use the same version of a package across different machines, use Yarn's lockfile feature.
+
+If you already know npm, stick with it. If you want a bigger community or you're more familiar with its commands, npm is a great choice too.
+
+[Here](https://www.geeksforgeeks.org/difference-between-npm-and-yarn/) is a cool article about the differences between them.
 
 [<< Back](/README.md)
